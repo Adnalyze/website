@@ -97,6 +97,11 @@
   .mobile-nav {
     padding: 10px 0;
   }
+
+.logo {
+  width: 80px;
+}
+  
   .mobile-nav .logo {
     position: inherit;
     top: 0;
