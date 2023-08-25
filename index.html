@@ -720,7 +720,18 @@
         <script src="assets/js/jquery.meanmenu.min.js"></script>
         <!-- main js -->
         <script src="assets/js/script.js"></script>
-        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/7108e51d-35aa-47f5-a207-010f426d84c3/webchat/config.js" defer></script>
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '64e8ccbc770d10000794c9cb' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+          </script>
     </body>
 </html>
